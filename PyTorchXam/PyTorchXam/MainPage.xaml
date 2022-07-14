@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PyTorchXam.MainPage">
+
+    <StackLayout VerticalOptions="Center"> 
+        <Label Text="1. Выбрать файл на устройстве" HorizontalOptions="Center" VerticalOptions="Center" ></Label>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions  >
+                <ColumnDefinition  Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <CheckBox IsChecked="True" HorizontalOptions="Center" Color="Red" Grid.Column="0" Grid.Row="0"></CheckBox>
+            <Button Text="Выбрать файл" x:Name="ChoseFile" HorizontalOptions="Center" Grid.Column="1" Grid.Row="0" Clicked="ChoseFile_Clicked"></Button>
+            
+
+        </Grid>
+        <Button Text="Скрыть подсказки" HorizontalOptions="Center" ></Button>
+        <Label Text="2. Все готово к увеличению фото" HorizontalOptions="Center" x:Name="l2"></Label>
+        <Button Text="Начать увеличение!" HorizontalOptions="Center" Clicked="StartButton_Clicked"  ></Button>
+    </StackLayout>
+
+</ContentPage>

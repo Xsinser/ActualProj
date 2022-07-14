@@ -1,0 +1,133 @@
+﻿
+@{
+    ViewBag.Title = "Форма обратной связи";
+}
+@Scripts.Render("~/bundles/Home/Form")
+<div>
+    <h1 style="text-align:center;">Форма обратной связи</h1>
+    <form id="form">
+        <fieldset style="border:1px solid black;padding: 10px;">
+
+            <div class="row align-items-center">
+
+                <div class="col text-center">
+                    <label>E-mail:</label> <input type="email" id="email" required placeholder="Ваше E-mail">
+                </div>
+                <div class="col">
+                    <label>Как к вам обращаться:</label> <input type="text" id="nameQu" required placeholder="Ваше имя">
+                </div>
+            </div>
+            <br />
+            <div class="row align-items-center">
+                <div style="text-align:center;">
+                    <h4>Оставить:</h4>
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <p><input name="main" onclick="From_OnClickFedb()" type="radio" value="fedb"> Отзыв</p>
+                        </div>
+                        <div class="col">
+                            <p><input name="main" onclick="From_OnClickTodo()" type="radio" value="todo"> Предложение</p>
+                        </div>
+                        <div class="col">
+                            <p><input name="main" onclick="From_OnClickQue()" type="radio" value="que" checked> Вопрос</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            @* Вопрос *@
+            <div class="row align-items-center" id="markQue">
+                <div class="col text-center">
+                    <h3>Ваш вопрос:</h3>
+                    <h5>Задать вопрос:</h5>
+                    <br />
+                    <textarea id="txtAreaQue" rows="20" cols="50" placeholder="Ваш вопрос"></textarea>
+                </div>
+            </div>
+            @*Предложение  *@
+            <div class="row text-center" id="markTodo">
+                <h3 style="text-align:center;">Ваше предложение:</h3>
+                <br />
+                <div class="col">
+                    <h5>Предложение :</h5>
+                    <br />
+                    <p>
+                        <input name="todoRad" type="radio" value="todoApp" onclick="$('#markTodoSelect').show();"> По приложению
+                        <select id="markTodoSelect">
+                            <option value="2048"> Classic 2048</option>
+                            <option value="XXSim"> XianXia Simulator</option>
+                        </select>
+                    </p>
+                    <p><input name="todoRad" type="radio" value="todoSite" checked> По сайту</p>
+                    <br />
+                    <br />
+                </div>
+                <div class="col">
+                    <h5>Текст вашего предложения:</h5>
+                    <br />
+                    <textarea id="txtAreaTodo" rows="20" cols="50" placeholder="Ваше предложение"></textarea>
+                </div>
+            </div>
+           @*Отзыв *@
+            <div id="markFedb">
+                <div class="row align-items-center">
+                    <h5 style="text-align:center;">Ваш отзыв:</h5>
+                    <div class="col text-center">
+                        <label>О чем отзыв? Отзыв</label>
+                        <select id="fedbSelect">
+                            <option value="site">о сайте</option>
+                            <option value="2048">о приложении Classic 2048</option>
+                            <option value="XXSim">о приложении XianXia Simulator</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="countStr">Ваша оценка:</label>
+                        <input type="range" id="countStr" name="countStr" value="5" step="1" onchange="Form_CountStr(this.value)"
+                               min="1" max="5">
+                        <label for="countStr">Оценка</label>
+                        <a id="strCountStr">5</a>
+                    </div>
+                    <div class="col-2">
+                        <label for="boolFeeddback">Написать вам? </label>
+                        <input type="checkbox" id="boolFeeddback" name="boolFeeddback" checked>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col text-center">
+                        <br />
+                        <h6>Отзыв:</h6>
+                        <br />
+                        <textarea id="txtAreaFedb" rows="20" cols="50" placeholder="Ваш отзыв"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="alert alert-danger" role="alert" id="alertDiv"></div>
+            <div style="text-align:center;">
+                <br />
+                <input type="submit" value="Отправить" onclick="Form_SubmitOnClick()">
+                <br />
+            </div>
+        </fieldset>
+    </form>
+</div>
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto">Форма обратной связи</strong>
+            <small></small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть" onclick="$('#liveToast').hide();"></button>
+        </div>
+        <div class="toast-body" id="messText">
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    From_OnClickQue();
+    $('#alertDiv').hide();
+    $('#markTodoSelect').hide();
+    $("#form").submit(function (e) {
+        Form_SubmitOnClick();
+        e.preventDefault();
+        var form_data = $(this).serialize();
+    });
+</script>

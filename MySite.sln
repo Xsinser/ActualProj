@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySite", "MySite\MySite.csproj", "{56EC3021-C3ED-4C7D-BA98-DC9765B8324D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PyTorchXam.Android", "PyTorchXam\PyTorchXam.Android\PyTorchXam.Android.csproj", "{38605F43-C004-4C30-916E-4D8232F0CB1B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PyTorchXam", "PyTorchXam\PyTorchXam\PyTorchXam.csproj", "{FEEA11A0-55B7-4183-8716-FC843AF7694C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsole", "TestConsole\TestConsole.csproj", "{37594E24-3949-465A-A8E9-BEA6505D78DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Android", "Android", "{D8D6EBD5-CCD3-403B-BA91-3BF69E65CCC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication2", "WebApplication2\WebApplication2.csproj", "{4013A34E-3A9E-43E8-9978-4BE9C8183E65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56EC3021-C3ED-4C7D-BA98-DC9765B8324D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56EC3021-C3ED-4C7D-BA98-DC9765B8324D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56EC3021-C3ED-4C7D-BA98-DC9765B8324D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56EC3021-C3ED-4C7D-BA98-DC9765B8324D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38605F43-C004-4C30-916E-4D8232F0CB1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38605F43-C004-4C30-916E-4D8232F0CB1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38605F43-C004-4C30-916E-4D8232F0CB1B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{38605F43-C004-4C30-916E-4D8232F0CB1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38605F43-C004-4C30-916E-4D8232F0CB1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38605F43-C004-4C30-916E-4D8232F0CB1B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FEEA11A0-55B7-4183-8716-FC843AF7694C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEEA11A0-55B7-4183-8716-FC843AF7694C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEEA11A0-55B7-4183-8716-FC843AF7694C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEEA11A0-55B7-4183-8716-FC843AF7694C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37594E24-3949-465A-A8E9-BEA6505D78DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37594E24-3949-465A-A8E9-BEA6505D78DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37594E24-3949-465A-A8E9-BEA6505D78DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37594E24-3949-465A-A8E9-BEA6505D78DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4013A34E-3A9E-43E8-9978-4BE9C8183E65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4013A34E-3A9E-43E8-9978-4BE9C8183E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4013A34E-3A9E-43E8-9978-4BE9C8183E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4013A34E-3A9E-43E8-9978-4BE9C8183E65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{38605F43-C004-4C30-916E-4D8232F0CB1B} = {D8D6EBD5-CCD3-403B-BA91-3BF69E65CCC0}
+		{FEEA11A0-55B7-4183-8716-FC843AF7694C} = {D8D6EBD5-CCD3-403B-BA91-3BF69E65CCC0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E10EB8E-4D1A-42CF-929A-5C66584A40F6}
+	EndGlobalSection
+EndGlobal

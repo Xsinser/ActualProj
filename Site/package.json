@@ -1,0 +1,9 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@popperjs/core": "^2.11.2",
+    "i": "^0.3.7",
+    "npm": "^8.3.2"
+  }
+}

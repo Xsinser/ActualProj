@@ -1,0 +1,269 @@
+﻿.filter, #datepicker-dropdown {
+    /*
+    position: absolute;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px black;
+    display: none;
+    padding: 20px;
+    top: 40px;
+    right: 0px;
+    -webkit-box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px black;
+    height: 270px;
+    background: white;
+    z-index: 1;
+    overflow: auto;*/
+}
+#overview .filter {
+    /*
+    top:-20px;
+    right:20px;
+        */
+}
+.filter#reportSelectionList {
+    top:auto;
+    right:auto;
+}
+
+.popup {
+    z-index: 9999;
+}
+
+.popup.filter {
+    width:300px;
+    height:100px;
+    left:230px;/*
+    margin-left:calc(50vw - 100px);
+    margin-top:calc(50vh - 100px);*/
+}
+
+.popup.center {
+    position: fixed;
+    left: 50%;
+    margin-left: -150px;
+    top:50%;
+    margin-top:-30px;
+    height:auto;
+}
+
+.popup.filter.page {
+    width:300px;
+    height:100px;
+    left:50%;
+}
+
+#uploadsPopup.filter {
+     height:auto;
+}
+
+#datepicker-dropdown, .datepickerViewDays th{
+    border-width: 0px;
+    font-family: Tahoma;
+    font-size: 12px;
+    font-weight: normal;
+}
+div.datepicker table td{
+    height: 17px;
+}
+div.datepicker table th {
+    height: 25px;
+}
+
+.datepickerDoW th span{
+    font-weight:bold;
+    color:black;
+    font-size: 11px;
+}
+
+.datepickerViewDays tr:first-child th, .datepickerSpace{
+   background: rgb(241,241,241);
+    background: -moz-linear-gradient(top,  rgba(241,241,241,1) 0%, rgba(232,232,232,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(241,241,241,1)), color-stop(100%,rgba(232,232,232,1)));
+    background: -webkit-linear-gradient(top,  rgba(241,241,241,1) 0%,rgba(232,232,232,1) 100%);
+    background: -o-linear-gradient(top,  rgba(241,241,241,1) 0%,rgba(232,232,232,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(241,241,241,1) 0%,rgba(232,232,232,1) 100%);
+    background: linear-gradient(to bottom,  rgba(241,241,241,1) 0%,rgba(232,232,232,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#e8e8e8',GradientType=0 );
+
+    height:30px;
+    background-size: 100% 30px;
+    background-repeat: no-repeat;
+}
+.datepickerContainer .datepickerFirstView th {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.datepickerContainer .datepickerLastView th {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.datepickerDays td a{
+    font-size:11px;
+    color:#555555;
+    width:18px;
+     height: 13px;
+    line-height: 13px;
+}
+
+.datepickerSpace div {
+    width: 5px;
+}
+
+.datepickerBlock, .datepickerSpace {
+     border-bottom-width: 0px;
+}
+.datepickerDays td {
+    border: solid 1px #f8f8f8;
+}
+.datepickerDays td.datepickerFuture  {
+    background-color:#E6E6E6;
+    opacity: 0.35;
+}
+div.datepicker table {
+    border-collapse:separate;
+}
+.main-daterange > div,  .comparison-daterange{
+    height: 40px;
+}
+
+.filter .button-section, #datepicker-dropdown .btn-group{
+    border-top: dashed 1px #BBBCBE;
+    width: 100%;
+    padding-top: 12px;
+    margin-right:20px;
+}
+
+.filter .button-section a, #datepicker-dropdown .btn-group a {
+    float:right;
+    display: inline-block;
+    width: 100px;
+    text-align:center;
+    padding-top:8px;
+    margin-right:12px;
+    padding-bottom:8px;
+    border-radius:5px;
+   background: rgb(241,241,241);
+    background: -moz-linear-gradient(top,  rgba(241,241,241,1) 0%, rgba(232,232,232,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(241,241,241,1)), color-stop(100%,rgba(232,232,232,1)));
+    background: -webkit-linear-gradient(top,  rgba(241,241,241,1) 0%,rgba(232,232,232,1) 100%);
+    background: -o-linear-gradient(top,  rgba(241,241,241,1) 0%,rgba(232,232,232,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(241,241,241,1) 0%,rgba(232,232,232,1) 100%);
+    background: linear-gradient(to bottom,  rgba(241,241,241,1) 0%,rgba(232,232,232,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#e8e8e8',GradientType=0 );
+
+}
+
+.filter .button-section a.active, #datepicker-dropdown .btn-group a.active {
+    background: rgb(92,190,242);
+        background: -moz-linear-gradient(top,  rgba(92,190,242,1) 0%, rgba(50,155,208,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(92,190,242,1)), color-stop(100%,rgba(50,155,208,1)));
+    background: -webkit-linear-gradient(top,  rgba(92,190,242,1) 0%,rgba(50,155,208,1) 100%);
+    background: -o-linear-gradient(top,  rgba(92,190,242,1) 0%,rgba(50,155,208,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(92,190,242,1) 0%,rgba(50,155,208,1) 100%);
+    background: linear-gradient(to bottom,  rgba(92,190,242,1) 0%,rgba(50,155,208,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5cbef2', endColorstr='#329bd0',GradientType=0 );
+    color: white;
+}
+#datepicker-dropdown .btn-group {
+    margin-top:20px;
+}
+
+#datepicker-dropdown .date-ranges-form {
+    float:right;
+}
+#datepicker-dropdown .date-ranges-form input[type='text']{
+    height:25px;
+    width:115px;
+}
+#datepicker-dropdown .main-daterange .parameters input {
+       height:23px;
+       width:28px;
+       margin-left:5px;
+}
+  #datepicker-dropdown  .date-ranges-form select {
+        float:right;
+        height:25px;
+        width:130px;
+         padding-top:4px;
+    }
+  .date-ranges-form .comparison {
+    height: 40px;
+    margin-top: 15px;    
+}
+#datepicker-dropdown .date-ranges-form > div.alt {
+    background:#f3f3f3;
+}
+#datepicker-dropdown .date-ranges-form input[type='checkbox'] {
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+#datepicker-dropdown .date-ranges-form input[type='text'],#filterRange select, #datepicker-dropdown .main-daterange .parameters input {
+    padding-left:5px;
+}
+
+.date-ranges-form .comparison > label {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+#compareLabel {
+    font-size: 10px;
+    line-height: 9px;
+    visibility: visible;
+}
+
+.date-range-field {
+    height: 24px;
+    line-height: 24px;
+    vertical-align: middle;
+    cursor:pointer;
+}
+.date-range-field.large {
+    line-height: 15px;
+}
+.popup.filter .popupInput {
+    width:300px;
+    height:50px;
+}
+.popup.filter .popupInput input {
+    width:290px;
+}
+.popup.filter .popupInput input,  .popup.filter .popupInput select{
+        color: #52646E;
+        display: block;
+        font: 13px "Helvetica Neue",sans-serif;
+        margin-bottom: 0;
+        padding: 8px 12px;
+        position: relative;
+        width: 273px;
+        z-index: 10;
+    }
+.popup.filter input[type='submit']  {
+    width: 100px;
+    text-align:center;
+    padding-top:8px;
+    margin-right:12px;
+    padding-bottom:8px;
+    border-radius:5px;
+    background: rgb(92,190,242);
+    background: -moz-linear-gradient(top,  rgba(92,190,242,1) 0%, rgba(50,155,208,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(92,190,242,1)), color-stop(100%,rgba(50,155,208,1)));
+    background: -webkit-linear-gradient(top,  rgba(92,190,242,1) 0%,rgba(50,155,208,1) 100%);
+    background: -o-linear-gradient(top,  rgba(92,190,242,1) 0%,rgba(50,155,208,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(92,190,242,1) 0%,rgba(50,155,208,1) 100%);
+    background: linear-gradient(to bottom,  rgba(92,190,242,1) 0%,rgba(50,155,208,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5cbef2', endColorstr='#329bd0',GradientType=0 );
+    color: white;
+    border-width:0px;
+}
+.popup.filter .popupInput  input[type='text']:focus{
+        background: none repeat scroll 0 0 #F7FAFC;
+        outline: medium none;
+    }
+
+#popupWait {
+    height: auto;
+    left: 50%;
+}
+
